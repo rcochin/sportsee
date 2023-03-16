@@ -1,0 +1,8 @@
+.nutrition-container{
+    display: flex;
+    background-color: #FBFBFB;
+    padding: 12px;
+    margin-bottom: 40px;
+}
+
+figure img{width: 80px;}

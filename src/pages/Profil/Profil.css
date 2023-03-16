@@ -1,0 +1,26 @@
+.page-wrapper{
+    position: relative;
+    display: flex;
+}
+
+.page-profil{
+    padding: 60px 90px;
+    width: 100%;
+}
+
+h1{font-size: 48px;}
+h1 span{color: #FF0101;}
+
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2{width: 20%; padding-left: 30px;}

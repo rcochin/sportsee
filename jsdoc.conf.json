@@ -1,0 +1,33 @@
+{
+  "source": {
+    "include": [
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/dailyActivities/DailyActivites.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/dailyStats/DailyStats.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/iconSidebar/IconSidebar.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/navbar/Navbar.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/objectifChart/ObjectifChart.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/radarChart/RadarChart.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/sidebar/Sidebar.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/components/timeChart/TimeChart.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/managers/dataManager.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/mocks/mockData.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/models",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/pages/Profil/Profil.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/routes/Routes.js",
+      "C:/Users/buldo/OneDrive/Documents/OpenClassroom/P12/sportsee/src/index.js"
+    ],
+    "exclude": ["node_modules"]
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "outputSourceFiles": true
+    }
+  }
+}

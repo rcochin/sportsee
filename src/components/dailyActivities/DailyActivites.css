@@ -1,0 +1,10 @@
+.recharts-responsive-container{height: 320px !important;}
+
+.recharts-default-legend{
+    margin-bottom: 20px !important;
+    position: absolute;
+    top: -46px;
+    right: 0px;
+}
+
+.chart-container{background-color: #FBFBFB; padding: 24px; width: 100%;}
