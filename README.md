@@ -18,7 +18,7 @@ The API for this project can be found at the following repository: https://githu
 Fork this repository to your own GitHub account. Then, clone the forked repository to your local machine using the following command:
 ``git clone https://github.com/your-username/repository-name.git``
 
-## Step 3: Start the Application
+## Step 3: Install and start the Application
 
 Navigate to the cloned repository on your local machine using a terminal or command prompt, and run the following command to install the library and dependencies:
 ``npm install`` or ``yarn install``
