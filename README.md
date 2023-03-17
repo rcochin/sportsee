@@ -20,21 +20,8 @@ Fork this repository to your own GitHub account. Then, clone the forked reposito
 
 ## Step 3: Start the Application
 
+Navigate to the cloned repository on your local machine using a terminal or command prompt, and run the following command to install the library and dependencies:
+``npm install`` or ``yarn install``
+
 Navigate to the cloned repository on your local machine and run the following command to start the application:
-``npm start``
-
-# Documentation Installation
-
-If you wish to install the documentation for this project, follow these steps:
-
-## Step 1: Install JSDOC
-
-Install JSDOC globally using the following command:
-``npm install -g jsdoc``
-
-## Step 2: Generate the Documentation
-
-Use the following command to generate the documentation:
-``jsdoc -c jsdoc.conf.json``
-
-This will create a "docs" folder in your project directory containing the generated documentation for the application.
+``npm start`` or ``yarn start``
