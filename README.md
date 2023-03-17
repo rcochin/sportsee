@@ -1,3 +1,10 @@
+# Prerequisites
+    Editeur : VSCode
+    React : version 18.2.0
+    NodeJS : version 16.14.2
+    npm : version 8.5.0
+    yarn : version 1.22.19
+
 # Project Installation
 
 To install this project, follow the steps below:
