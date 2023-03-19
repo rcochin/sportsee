@@ -23,12 +23,16 @@ const { getUserMainData, getUserActivity, getUserAverageSessions, getUserPerform
  */
 export const manageUserMainData = async (userId) => {
     const userData = await getUserMainData(userId);
-    let todayScore = userData.data.todayScore ? userData.data.todayScore : userData.data.score;
-    let userStats = userData.data.keyData
-    let userInfos = userData.data.userInfos;
-    const user = new User( userId, userInfos , todayScore, userStats );
-    const mainData = user.getMainData();
-    return mainData
+    if(!userData){
+      return null
+    }else{
+      let todayScore = userData.data.todayScore ? userData.data.todayScore : userData.data.score;
+      let userStats = userData.data.keyData
+      let userInfos = userData.data.userInfos;
+      const user = new User( userId, userInfos , todayScore, userStats );
+      const mainData = user.getMainData();
+      return mainData
+    }
 };
 
 /**
@@ -39,9 +43,13 @@ export const manageUserMainData = async (userId) => {
  */
 export const manageUserActivity = async (userId) => {
     const userData = await getUserActivity(userId);
-    const userActivity = new UserActivity( userData.data.userId, userData.data.sessions);
-    const activities = userActivity.getActivities();
-    return activities;
+    if(!userData){
+      return null
+    }else {
+      const userActivity = new UserActivity( userData.data.userId, userData.data.sessions);
+      const activities = userActivity.getActivities();
+      return activities;
+    }
 }
 
 /**
@@ -52,9 +60,13 @@ export const manageUserActivity = async (userId) => {
  */
 export const manageUserAverageSessions = async (userId) => {
     const userData = await getUserAverageSessions(userId);
-    const userAverageSessions = new UserAverageSessions(userData.data.userId, userData.data.sessions);
-    const sessions = userAverageSessions.getSessions();
-    return sessions;
+    if(!userData){
+      return null
+    }else {
+      const userAverageSessions = new UserAverageSessions(userData.data.userId, userData.data.sessions);
+      const sessions = userAverageSessions.getSessions();
+      return sessions;
+    }
 };
 
 /**
@@ -65,7 +77,11 @@ export const manageUserAverageSessions = async (userId) => {
  */
 export const manageUserPerformances = async (userId) => {
     const userData = await getUserPerformances(userId);
-    const userPerformances = new UserPerformances(userData.data.data, userData.data.kind);
-    const performances = userPerformances.getPerformances();
-    return performances;
+    if(!userData){
+      return null
+    }else {
+      const userPerformances = new UserPerformances(userData.data.data, userData.data.kind);
+      const performances = userPerformances.getPerformances();
+      return performances;
+    }
 }

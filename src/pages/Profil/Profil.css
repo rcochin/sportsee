@@ -24,3 +24,20 @@ h1 span{color: #FF0101;}
 }
 
 .col-2{width: 20%; padding-left: 30px;}
+
+.small-charts-container{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.error-msg{max-width: 1200px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px;}
+
+.error-msg h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: red;
+}
+
+.error-msg p {font-size: 20px;}

@@ -11,7 +11,7 @@ export const getUserMainData = async (userId) => {
     const response = await axios.get(`http://localhost:3000/user/${userId}`);
     return response.data;
   } catch (error) {
-    console.error(error);
+    return null; 
   }
 };
 
@@ -26,7 +26,7 @@ export const getUserActivity = async (userId) => {
     const response = await axios.get(`http://localhost:3000/user/${userId}/activity`);
     return response.data;
   } catch (error) {
-    console.error(error);
+    return null; 
   }
 };
 
@@ -41,7 +41,7 @@ export const getUserAverageSessions = async (userId) => {
     const response = await axios.get(`http://localhost:3000/user/${userId}/average-sessions`);
     return response.data;
   } catch (error) {
-    console.error(error);
+    return null; 
   }
 };
 
@@ -56,6 +56,6 @@ export const getUserPerformances = async (userId) => {
     const response = await axios.get(`http://localhost:3000/user/${userId}/performance`);
     return response.data;
   } catch (error) {
-    console.error(error);
+    return null;
   }
 };

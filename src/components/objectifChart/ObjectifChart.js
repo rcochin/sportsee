@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { RadialBarChart, RadialBar, ResponsiveContainer, Text } from 'recharts';
 import './ObjectifChart.css'
 
@@ -47,7 +47,7 @@ export default class ObjectifChart extends React.Component {
       {
         name: 'Remaining',
         percentage: 100,
-        fill: 'white',
+        fill: '#e8e8e8',
         key: 'remaining'
       },
       {

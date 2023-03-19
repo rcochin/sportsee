@@ -1,22 +1,10 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import './TimeChart.css'
+import './TimeChart.css';
 
-/**
- * A time chart component that displays the average session length by day.
- * @param {Object} props - The props object containing the time activity data.
- * @param {Array} props.timeActivity - An array of objects containing the time activity data.
- * @returns {JSX.Element} - A React component that displays the time chart.
- */
 export default class TimeChart extends PureComponent {
   render() {
-    /**
-     * A custom tooltip component that displays the session length value.
-     * @param {Object} props - The props object containing the tooltip payload.
-     * @param {Boolean} props.active - A boolean value that indicates if the tooltip is active.
-     * @param {Array} props.payload - An array of objects containing the tooltip payload.
-     * @returns {JSX.Element|null} - A React component that displays the custom tooltip.
-     */
     const CustomTooltip = ({ active, payload }) => {
       if (active) {
         return (
@@ -69,3 +57,12 @@ export default class TimeChart extends PureComponent {
     );
   }
 }
+
+TimeChart.propTypes = {
+  timeActivity: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string.isRequired,
+      sessionLength: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};

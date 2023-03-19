@@ -14,9 +14,9 @@ const Navbar = () =>{
             <ul>
                 <li><Link to="/"><img src={Logo} alt="Logo SportSee" className="logo"/></Link></li>
                 <li><Link to="/">Accueil</Link></li>
-                <li><Link to="/profil">Profil</Link></li>
-                <li><Link to="/reglages">Réglage</Link></li>
-                <li><Link to="/communaute">Communauté</Link></li>
+                <li><Link to="/profil/12">Profil</Link></li>
+                <li><Link to="/#">Réglage</Link></li>
+                <li><Link to="/#">Communauté</Link></li>
             </ul>
         </nav>
         <div>

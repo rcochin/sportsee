@@ -1,0 +1,9 @@
+.error-page{max-width: 1200px; width: 100%; margin-left: auto; margin-right: auto; padding-top: 100px;}
+
+.error-page h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: red;
+}
+
+.error-page p {font-size: 20px;}

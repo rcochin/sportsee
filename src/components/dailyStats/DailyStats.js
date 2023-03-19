@@ -1,30 +1,28 @@
-import './DailyStats.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './DailyStats.css';
 
-/**
- * A component that displays daily nutrition stats.
- *
- * @param {Object} props - The props object for the component.
- * @param {string} props.type - The type of the nutrition stat.
- * @param {number} props.value - The value of the nutrition stat.
- * @param {string} props.unit - The unit of the nutrition stat.
- * @param {string} props.image - The image source for the nutrition stat icon.
- * @return {JSX.Element} - The DailyStats component.
-*/
-const DailyStats = ({type, value, unit, image}) => {
- 
-    return(
-        <div className='nutrition-container'>
-            <figure>
-                <img alt='icone-nutrition' src={image} />
-            </figure>
-            <div>
-                <h3>{value} {unit}</h3>
-                <p>{type}</p>
-            </div>
+const DailyStats = ({ type, value, unit, image }) => {
+  return (
+    <div className='nutrition-container'>
+      <figure>
+        <img alt='icone-nutrition' src={image} />
+      </figure>
+      <div>
+        <h3>
+          {value} {unit}
+        </h3>
+        <p>{type}</p>
+      </div>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
+DailyStats.propTypes = {
+  type: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+  unit: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
-export default DailyStats
-
+export default DailyStats;

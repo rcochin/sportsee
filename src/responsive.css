@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1740px)  {
+    .stats-container{flex-direction: column;}
+    .col-1{width: 100%;}
+    .nutrition-container {
+        display: flex;
+        background-color: #FBFBFB;
+        padding: 12px;
+        margin-bottom: 40px;
+        width: 300px;
+    }
+
+    .col-2 {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media only screen and (max-width: 1500px) {
+    .chart-container{width: 90%;}
+}
+
+@media only screen and (max-width: 1125px) {
+    .small-charts-container{justify-content: center;}
+    .time-chart-container{margin-bottom: 40px;}
+}

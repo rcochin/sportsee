@@ -1,5 +1,6 @@
 .time-chart-container{
-    width: 30%; 
+    max-width: 382px;
+    width: 100%; 
     background-color: #E60000;
     border-radius: 10px;
 }
